@@ -1,0 +1,69 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2016/02/16/a-pretty-nice-neon--wallpaper.jpg');
+    background-size: cover;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* fallback color */
+    background-image: linear-gradient(to bottom, #4CAF50, #4CAF50 50%, #388E3C 50%, #388E3C);
+    /* gradient */
+    border: none;
+    width: 400px;
+    height: 400px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    font-family: Lobster;
+    margin: 7px 7px;
+    cursor: pointer;
+    transition: background-position 0.3s ease-in-out;
+    /* add transition effect */
+}
+
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.button-blue {
+    background: linear-gradient(to bottom, #427eff, #ab51f5);
+}
+
+.button-green {
+    background: linear-gradient(to bottom, #427eff, #ab51f5);
+}
+
+.button-red {
+    background: linear-gradient(to bottom, #427eff, #ab51f5);
+}
+
+.button-yellow {
+    background: linear-gradient(to bottom, #427eff, #ab51f5);
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.button-row button {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
